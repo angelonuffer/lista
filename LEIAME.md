@@ -1,6 +1,6 @@
-# Projeto Lista
+# Lista.0
 
-Este projeto fornece implementações personalizadas das funções `mapear` (map) e `juntar` (join) para listas.
+Esta biblioteca fornece implementações das funções `mapear` e `juntar` para listas.
 
 ## Função `mapear`
 
@@ -8,12 +8,12 @@ A função `mapear` aplica uma função transformadora a cada elemento de uma li
 
 **Parâmetros:**
 
-*   `lista2`: A lista de entrada a ser mapeada.
-*   `mapeador`: A função que será aplicada a cada elemento da `lista2`.
+*   `lista`: A lista de entrada a ser mapeada.
+*   `mapeador`: A função que será aplicada a cada elemento da `lista`.
 
 **Retorno:**
 
-*   Uma nova lista contendo os elementos da `lista2` após a aplicação da função `mapeador`.
+*   Uma nova lista contendo os elementos da `lista` após a aplicação da função `mapeador`.
 
 **Exemplo de Uso:**
 
@@ -30,12 +30,12 @@ A função `juntar` concatena todos os elementos de uma lista em uma única stri
 
 **Parâmetros:**
 
-*   `lista2`: A lista de entrada cujos elementos serão juntados.
-*   `delimitador`: A string que será inserida entre cada elemento da lista na string resultante.
+*   `lista`: A lista de entrada cujos elementos serão juntados.
+*   `delimitador`: A string que será inserida entre cada elemento da `lista` na string resultante.
 
 **Retorno:**
 
-*   Uma string representando a concatenação dos elementos da `lista2`, separados pelo `delimitador`.
+*   Uma string representando a concatenação dos elementos da `lista`, separados pelo `delimitador`.
 
 **Exemplo de Uso:**
 
@@ -47,6 +47,10 @@ frase = lista.juntar(palavras " ")
 
 ## Testes
 
-O projeto utiliza uma biblioteca de testes personalizada chamada `uniteste` para verificar a corretude das funções `mapear` e `juntar`. Os arquivos de teste específicos para cada função podem ser encontrados no diretório `testes/`.
+Os arquivos de teste específicos para cada função podem ser encontrados no diretório `testes/`.
 
-Para executar os testes, presume-se a existência de um interpretador para a linguagem `.0` e a execução do arquivo `testes.0`.
+Para executar os testes, utilize o interpretador da linguagem 0 em Node.js:
+
+``` bash
+$ node 0/0_cli.js testes.0
+```
