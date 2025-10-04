@@ -1,8 +1,13 @@
-uniteste # https://raw.githubusercontent.com/Nuffem/uniteste/b54e1bd5a811f99160e9eccf7af0a8e2d7bc18c0/uniteste.0
+uniteste # https://cdn.jsdelivr.net/gh/nuffem/0@846ac253945041d5d797509d2a8c7c91e0a9fb52/uniteste.0
+lista # ../código/lista.0
 mapear # mapear.0
-juntar # juntar.0
+reduzir # reduzir.0
+planificar # planificar.0
 
-uniteste.principal([
-  mapear
-  juntar
-])
+uniteste.descrever({"lista"
+  lista.mapear({{
+    mapear
+    reduzir
+    planificar
+  } f => f(uniteste)})
+})(0)
