@@ -1,6 +1,7 @@
+uniteste # uniteste.0
 lista # ../código/lista.0
 
-uniteste => uniteste.descrever({"Reduzir" {
+uniteste.descrever({"Reduzir" {
   uniteste.iguais({
     lista.reduzir({{5} args => args[0] + args[1]})
     5
