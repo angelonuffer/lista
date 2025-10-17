@@ -1,6 +1,7 @@
+uniteste # uniteste.0
 lista # ../código/lista.0
 
-uniteste => uniteste.descrever({"Planificar" {
+uniteste.descrever({"Planificar" {
   uniteste.listas_iguais({
     lista.planificar({})
     {}
