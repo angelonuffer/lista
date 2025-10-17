@@ -10,9 +10,9 @@ jobs:
     - uses: actions/checkout@v4
       with:
         repository: nuffem/0
-        ref: 846ac253945041d5d797509d2a8c7c91e0a9fb52
+        ref: bfd9cec44eb2635b4fc0a84ca2a88cb3b9e6551a
         path: "./0"
     - uses: actions/setup-node@v4
       with:
         node-version: '22'
-    - run: node 0/0_node.js testes/0
+    - run: node 0/código/0_node.js testes/0

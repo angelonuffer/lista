@@ -10,4 +10,4 @@ uniteste.descrever({"lista"
     reduzir
     planificar
   } f => f(uniteste)})
-})(0)
+})
