@@ -14,11 +14,11 @@ A função `mapear` aplica uma função transformadora a cada elemento de uma li
 **Exemplo de Uso:**
 
 ```
-lista.mapear({
-  {1 2 3 4}
+lista.mapear([
+  [1 2 3 4]
   n => n * 2
-})
-// {2 4 6 8}
+])
+// [2 4 6 8]
 ```
 
 ## Função `reduzir`
@@ -33,10 +33,10 @@ A função `reduzir` combina todos os elementos de uma lista em um único valor,
 **Exemplo de Uso:**
 
 ```
-lista.reduzir({
-  {1 2 3 4}
+lista.reduzir([
+  [1 2 3 4]
   args => args[0] + args[1]
-})
+])
 // 10
 ```
 
@@ -51,8 +51,8 @@ A função `planificar` combina múltiplas listas em uma única lista nivelada.
 **Exemplo de Uso:**
 
 ```
-lista.planificar({{1 2} {3 4} {5 6}})
-// {1 2 3 4 5 6}
+lista.planificar([[1 2] [3 4] [5 6]])
+// [1 2 3 4 5 6]
 ```
 
 ## Testes

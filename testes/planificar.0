@@ -1,21 +1,21 @@
 uniteste # uniteste.0
 lista # ../código/lista.0
 
-uniteste.descrever({"Planificar" {
-  uniteste.listas_iguais({
-    lista.planificar({})
-    {}
-  })
-  uniteste.listas_iguais({
-    lista.planificar({{1 2} {3 4}})
-    {1 2 3 4}
-  })
-  uniteste.listas_iguais({
-    lista.planificar({{} {1} {2 3}})
-    {1 2 3}
-  })
-  uniteste.listas_iguais({
-    lista.planificar({{10} {20}})
-    {10 20}
-  })
-}})
+uniteste.descrever(["Planificar" [
+  uniteste.listas_iguais([
+    lista.planificar([])
+    []
+  ])
+  uniteste.listas_iguais([
+    lista.planificar([[1 2] [3 4]])
+    [1 2 3 4]
+  ])
+  uniteste.listas_iguais([
+    lista.planificar([[] [1] [2 3]])
+    [1 2 3]
+  ])
+  uniteste.listas_iguais([
+    lista.planificar([[10] [20]])
+    [10 20]
+  ])
+]])

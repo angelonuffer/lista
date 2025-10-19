@@ -1,17 +1,17 @@
 uniteste # uniteste.0
 lista # ../código/lista.0
 
-uniteste.descrever({"Mapear" {
-  uniteste.listas_iguais({
-    lista.mapear({{1 2 3} x => x * 2})
-    {2 4 6}
-  })
-  uniteste.listas_iguais({
-    lista.mapear({{} x => x + 1})
-    {}
-  })
-  uniteste.listas_iguais({
-    lista.mapear({{10} x => x - 5})
-    {5}
-  })
-}})
+uniteste.descrever(["Mapear" [
+  uniteste.listas_iguais([
+    lista.mapear([[1 2 3] x => x * 2])
+    [2 4 6]
+  ])
+  uniteste.listas_iguais([
+    lista.mapear([[] x => x + 1])
+    []
+  ])
+  uniteste.listas_iguais([
+    lista.mapear([[10] x => x - 5])
+    [5]
+  ])
+]])
