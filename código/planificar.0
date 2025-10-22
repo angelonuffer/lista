@@ -1,8 +1,13 @@
-planificar = lista_original =>
-  | lista_original[.] == 0 = []
+planificar = { lista } =>
+  | lista[.] == 0 = []
   | [
-    ...lista_original[0]
-    ...planificar(lista_original[1:])
-  ]
+      ...lista[0]
+      ...(
+        _lista = lista
+        planificar({
+          lista: _lista[1:]
+        })
+      )
+    ]
 
 planificar

@@ -1,14 +1,18 @@
-mapear = args =>
-  | args[0][.] == 0 = []
-  | args[0][.] == 1 = [
-    args[1](args[0][0])
-  ]
+mapear = { lista função } =>
+  | lista[.] == 0 = []
+  | lista[.] == 1 = [
+      função(lista[0])
+    ]
   | [
-    args[1](args[0][0])
-    ...mapear([
-      args[0][1:]
-      args[1]
-    ])
-  ]
+      função(lista[0])
+      ...(
+        _lista = lista
+        _função = função
+        mapear({
+          lista: _lista[1:]
+          função: _função
+        })
+      )
+    ]
 
 mapear
