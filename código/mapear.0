@@ -1,0 +1,14 @@
+mapear = args =>
+  | args[0][.] == 0 = []
+  | args[0][.] == 1 = [
+    args[1](args[0][0])
+  ]
+  | [
+    args[1](args[0][0])
+    ...mapear([
+      args[0][1:]
+      args[1]
+    ])
+  ]
+
+mapear
