@@ -1,33 +1,36 @@
 uniteste # uniteste.0
 lista # ../código/0
 
-uniteste.descrever(["Reduzir" [
-  uniteste.iguais([
-    lista.reduzir({
-      lista: [ 5 ]
-      função: args => args[0] + args[1]
-    })
-    5
-  ])
-  uniteste.iguais([
-    lista.reduzir({
-      lista: [ 1 2 ]
-      função: args => args[0] + args[1]
-    })
-    3
-  ])
-  uniteste.iguais([
-    lista.reduzir({
-      lista: [ 1 2 3 ]
-      função: args => args[0] + args[1]
-    })
-    6
-  ])
-  uniteste.iguais([
-    lista.reduzir({
-      lista: [ 20 10 ]
-      função: args => args[0] - args[1]
-    })
-    10
-  ])
-]])
+uniteste.descrever({
+  nome: "Reduzir"
+  testes: [
+    uniteste.iguais([
+      lista.reduzir({
+        lista: [ 5 ]
+        função: args => args[0] + args[1]
+      })
+      5
+    ])
+    uniteste.iguais([
+      lista.reduzir({
+        lista: [ 1 2 ]
+        função: args => args[0] + args[1]
+      })
+      3
+    ])
+    uniteste.iguais([
+      lista.reduzir({
+        lista: [ 1 2 3 ]
+        função: args => args[0] + args[1]
+      })
+      6
+    ])
+    uniteste.iguais([
+      lista.reduzir({
+        lista: [ 20 10 ]
+        função: args => args[0] - args[1]
+      })
+      10
+    ])
+  ]
+})

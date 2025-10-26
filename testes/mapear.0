@@ -1,26 +1,29 @@
 uniteste # uniteste.0
 lista # ../código/0
 
-uniteste.descrever(["Mapear" [
-  uniteste.listas_iguais([
-    lista.mapear({
-      lista: [ 1 2 3 ]
-      função: x => x * 2
-    })
-    [ 2 4 6 ]
-  ])
-  uniteste.listas_iguais([
-    lista.mapear({
-      lista: []
-      função: x => x + 1
-    })
-    []
-  ])
-  uniteste.listas_iguais([
-    lista.mapear({
-      lista: [ 10 ]
-      função: x => x - 5
-    })
-    [ 5 ]
-  ])
-]])
+uniteste.descrever({
+  nome: "Mapear"
+  testes: [
+    uniteste.listas_iguais([
+      lista.mapear({
+        lista: [ 1 2 3 ]
+        função: x => x * 2
+      })
+      [ 2 4 6 ]
+    ])
+    uniteste.listas_iguais([
+      lista.mapear({
+        lista: []
+        função: x => x + 1
+      })
+      []
+    ])
+    uniteste.listas_iguais([
+      lista.mapear({
+        lista: [ 10 ]
+        função: x => x - 5
+      })
+      [ 5 ]
+    ])
+  ]
+})

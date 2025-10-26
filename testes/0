@@ -3,8 +3,11 @@ mapear # mapear.0
 reduzir # reduzir.0
 planificar # planificar.0
 
-uniteste.descrever(["lista" [
-  mapear
-  reduzir
-  planificar
-]])
+uniteste.descrever({
+  nome: "lista"
+  testes: [
+    mapear
+    reduzir
+    planificar
+  ]
+})
