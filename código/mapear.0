@@ -5,14 +5,10 @@ mapear = { lista função } =>
   ]
   | [
     função(lista[0])
-    ...(
-      _lista = lista
-      _função = função
-      mapear({
-        lista: _lista[1:]
-        função: _função
-      })
-    )
+    ...mapear({
+      lista: lista[1:]
+      função: função
+    })
   ]
 
 mapear

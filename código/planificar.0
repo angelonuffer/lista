@@ -2,12 +2,9 @@ planificar = { lista } =>
   | lista[.] == 0 = []
   | [
     ...lista[0]
-    ...(
-      _lista = lista
-      planificar({
-        lista: _lista[1:]
-      })
-    )
+    ...planificar({
+      lista: lista[1:]
+    })
   ]
 
 planificar
