@@ -14,7 +14,7 @@ jobs:
     - uses: actions/checkout@v4
       with:
         repository: angelonuffer/0
-        ref: 87ea952b47432f4a0ae401007f5bcef8eef6265c
+        ref: f64cf6c5f2ad27f57382dd475ad8bedd28430e3f
         path: "./0"
     - uses: actions/setup-node@v4
       with:
