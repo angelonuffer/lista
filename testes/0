@@ -1,13 +1,8 @@
-uniteste # uniteste.0
-mapear # mapear.0
-reduzir # reduzir.0
-planificar # planificar.0
-
-uniteste.descrever({
+(uniteste.0).descrever({
   nome: "lista"
   testes: [
-    mapear
-    reduzir
-    planificar
+    mapear.0
+    reduzir.0
+    planificar.0
   ]
 })

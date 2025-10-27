@@ -1,5 +1,5 @@
-uniteste # uniteste.0
-lista # ../código/0
+uniteste = uniteste.0
+lista = ../código/0
 
 uniteste.descrever({
   nome: "Planificar"

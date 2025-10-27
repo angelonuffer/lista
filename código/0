@@ -1,9 +1,5 @@
-mapear # mapear.0
-reduzir # reduzir.0
-planificar # planificar.0
-
 {
-  mapear
-  reduzir
-  planificar
+  mapear: mapear.0
+  reduzir: reduzir.0
+  planificar: planificar.0
 }
