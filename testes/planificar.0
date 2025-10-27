@@ -5,27 +5,19 @@ uniteste.descrever({
   nome: "Planificar"
   testes: [
     uniteste.listas_iguais([
-      lista.planificar({
-        lista: []
-      })
+      lista.planificar([])
       []
     ])
     uniteste.listas_iguais([
-      lista.planificar({
-        lista: [ [ 1 2 ] [ 3 4 ] ]
-      })
+      lista.planificar([ [ 1 2 ] [ 3 4 ] ])
       [ 1 2 3 4 ]
     ])
     uniteste.listas_iguais([
-      lista.planificar({
-        lista: [ [] [ 1 ] [ 2 3 ]]
-      })
+      lista.planificar([ [] [ 1 ] [ 2 3 ] ])
       [ 1 2 3 ]
     ])
     uniteste.listas_iguais([
-      lista.planificar({
-        lista: [ [ 10 ] [ 20 ] ]
-      })
+      lista.planificar([ [ 10 ] [ 20 ] ])
       [ 10 20 ]
     ])
   ]
