@@ -12,7 +12,7 @@ reduzir = { lista função } =>
       ])
       ...lista[2:]
     ]
-    função: função
+    função
   })
 
 reduzir

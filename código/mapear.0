@@ -7,7 +7,7 @@ mapear = { lista função } =>
     função(lista[0])
     ...mapear({
       lista: lista[1:]
-      função: função
+      função
     })
   ]
 

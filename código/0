@@ -3,7 +3,7 @@ reduzir # reduzir.0
 planificar # planificar.0
 
 {
-  mapear: mapear
-  reduzir: reduzir
-  planificar: planificar
+  mapear
+  reduzir
+  planificar
 }
